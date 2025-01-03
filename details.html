@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الفيلم/المسلسل</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">UHDplus</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="movies.html">الأفلام</a></li>
+                <li><a href="series.html">المسلسلات</a></li>
+                <li><a href="admin.html">الإعدادات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- البانر الأفقي -->
+        <section class="banner">
+            <img src="" alt="بانر الفيلم" class="banner-image">
+            <div class="banner-overlay"></div>
+        </section>
+
+        <!-- تفاصيل الفيلم/المسلسل -->
+        <section class="content-details">
+            <!-- البوستر العمودي -->
+            <div class="poster-container">
+                <img src="" alt="بوستر الفيلم" class="poster-image">
+            </div>
+
+            <!-- التفاصيل -->
+            <div class="details-container">
+                <h1 id="detailsTitle">جاري التحميل...</h1>
+                <p id="detailsDescription"></p>
+                <div class="details-meta">
+                    <span id="detailsYear"></span>
+                    <span id="detailsCategories"></span>
+                    <div class="content-rating">
+                        <span>التقييم: </span>
+                        <span id="detailsRating"></span>
+                    </div>
+                </div>
+                <div class="content-actions">
+                    <button class="trailer-btn" id="trailerBtn">مشاهدة التريلر</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- مشغل الفيديو -->
+        <div id="videoPlayerSection">
+            <iframe id="driveVideoPlayer" width="100%" height="500" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>UHDplus</h3>
+                <p>أفضل موقع لمشاهدة الأفلام والمسلسلات بجودة عالية</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="details.js"></script>
+</body>
+</html>
